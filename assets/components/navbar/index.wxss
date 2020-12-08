@@ -1,0 +1,29 @@
+@import '/assets/font/iconfont.wxss';
+.navbar{position:fixed;background-color:#FFE002;top:0;left:0;z-index:99999999;width:100%;}
+.navbar.on{background-color:#e93323;}
+.navbar.black{background-color:#232323;}
+.navbar.gray{background-color:#666;}
+.navbar .navbarH{position:relative;}
+.navbar .navbarH .navbarCon{position:absolute;bottom:0;height:100rpx;width:100%;}
+.navbar .navbarH .content{width: calc(100% - 440rpx);position: absolute; text-align: center; left: 0; right: 0; bottom: 0; top: 0; margin: auto; height: 60rpx; font-size: 32rpx; line-height: 60rpx; cursor: none; pointer-events: none; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+
+.navbar .navbarH .content2{position: absolute; text-align: center; left: 20rpx;  margin: auto;bottom: 0; top: 0; height: 60rpx; font-size: 32rpx; line-height: 60rpx;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;background: rgba(255, 255, 255, 0.5);  border-radius: 60rpx;z-index: 100000}
+.line{
+  color: #000;
+  opacity: 0.1;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  position:absolute;
+  top:-1px;
+  left: 77rpx;
+}
+.navbar .navbarH .content2 .iconfont{
+  font-size: 32rpx;
+  color: #000;
+  width: 85rpx;
+  display: inline-block;
+}
+.navbar .navbarH .content2 .icon-shouye-shouye{
+  font-size: 40rpx;
+  font-weight: bold;
+}

@@ -1,0 +1,11 @@
+<view class='navbar' style='height:{{navH}}rpx;background-color:{{background}};'>
+   <view class='navbarH' style='height:{{navH}}rpx;'>
+      <view class="content2" style="top:{{statusBar}}px">
+          <view class='iconfont icon-shangyiye' wx:if='{{parameter.return==1}}'  bindtap='return'></view>
+          <text class='line' wx:if='{{parameter.return==1 && parameter.home==1}}'>|</text>
+          <view class='iconfont icon-shouye-shouye' wx:if='{{parameter.home==1}}' bindtap='home'></view>
+      </view>
+      <view class="content" style="top:{{statusBar}}px;color:{{titleColor}};">{{parameter.title}}</view>
+   </view>
+</view>
+<view style='height:{{navH}}rpx'></view>

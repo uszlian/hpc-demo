@@ -1,0 +1,18 @@
+<popupDialog anim-type="bottom" dialog-class="popupDialog" id="dialog" show="{{show}}">
+	<view class="dialogHeader">
+		<image class="dialogHeaderClose"></image>
+		<text class="dialogHeaderText">手动输入条形码</text>
+		<image class="dialogHeaderClose" src="{{dialogHeaderClosePath}}" bindtap="dismissDialog"></image>
+	</view>
+
+	<image class="dialogBarcode" src="{{dialogBarcodePath}}"></image>
+	<view class="dialogInputLayout">
+		<input class="dialogInput" placeholder="请输入商品条形码" confirm-type="search" bindinput="dialogInputEvevt"
+			value="{{result}}"></input>
+		<view class="dialogInputClose" bindtap="dialogInputCloseEvevt" hidden="{{result == null || result === ''}}">
+			<image class="dialogInputCloseIco" src="https://img.hpcang.com/mp_hpc/queryPrice/ico_input_close.png"/>
+		</view>
+	</view>
+
+		<ripple rippleStyle="{{rippleStyle}}" disabled="{{!inputEnabled}}" bindclick="dialogConfirmEvevt">立即查询</ripple>
+</popupDialog>

@@ -1,0 +1,9 @@
+<view class="ripple ripple-class {{disabled? 'ripple-disabled disabled-class':''}}" style="{{rippleStyle+radius+rippleColor+(disabled?rippleDisabledStyle:'')}}" catchtouchstart="{{disabled?'':'touchStartEvent'}}"
+catchtouchmove="{{disabled?'':'touchMoveEvent'}}" catchtouchcancel="{{disabled?'':'touchCancelEvent'}}" catchtouchend="{{disabled?'':'touchEndEvent'}}" 
+catchlongpress="{{disabled?'':'longpressEvent'}}" catchtouchforcechange="{{disabled?'':'touchForceEvent'}}" catchlongtap="{{disabled?'':'longTapEvent'}}" hidden="{{hidden}}">
+  <slot></slot>
+  <block wx:for="{{rippleOverlays}}" wx:key="id">
+    <view class="_ripple_overlay" style="{{item.x+item.y+item.size+item.offset+item.duration}}" bindanimationend="animEndEvent"></view>
+  </block>
+  <view class="_longpress_overlay" hidden="{{!longpress}}"></view>
+</view>

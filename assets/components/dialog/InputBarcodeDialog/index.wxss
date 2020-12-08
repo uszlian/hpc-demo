@@ -1,0 +1,65 @@
+.popupDialog {
+  height: 687rpx;
+  border-radius: 16rpx 16rpx 0 0;
+}
+
+.dialogHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 33rpx;
+}
+
+.dialogHeaderText {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #1F1F1F;
+}
+
+.dialogHeaderClose {
+  padding-right: 24rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.dialogBarcode {
+  width: 354rpx;
+  height: 238rpx;
+  margin-top: 54rpx;
+}
+
+.dialogInputLayout {
+  display: flex;
+  align-items: center;
+  margin-top: 62rpx;
+  height: 66rpx;
+  width: 600rpx;
+  border-bottom: solid 1rpx #979797;
+}
+
+.dialogInput {
+  flex-grow: 1;
+  height: 100%;
+  color: #333333;
+  font-size: 26rpx;
+  caret-color: #ffe002 !important;
+}
+
+.dialogInputClose{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20rpx;
+}
+
+.dialogInputCloseIco{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.dialogInput::-webkit-input-placeholder {
+  color: #9A9A9A;
+  font-size: 26rpx;
+}

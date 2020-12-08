@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "pureDataPattern": "^_",
+  "usingComponents": {
+    "popupDialog": "/assets/components/dialog/index",
+    "ripple": "/assets/components/ripple/index"
+  }
+}

@@ -1,0 +1,6 @@
+<view class="{{showDialog?'dialogDim':''}}" catchtap="{{cancelable ?'dismissDialog':''}}"
+	catchtouchstart="dismissDialog" hidden="{{showDialog == null}}" />
+<view class="{{showDialog == null?'':showDialog?animIn:animOut}} dialog-class dialog" style="{{dialogStyle + showDialog == null?'':showDialog?dialogAnimInStyle:dialogAnimOutStyle}}"
+	hidden="{{showDialog == null || (!showDialog && animOut == null) || (!showDialog && dialogAnimOutStyle == null)}}" catchtouchmove="touchMoveEvent">
+	<slot></slot>
+</view>

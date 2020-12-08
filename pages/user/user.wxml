@@ -1,0 +1,12 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <text class="user-motto">Hi！美丽.祝</text>
+  </view>
+  <view class="userinfo">
+    <text class="user-name">你是 {{name}} 对不对?</text>
+  </view>
+  <view class="data">
+    <text class="age">年龄：{{age}}</text>
+  </view>
+</view>
